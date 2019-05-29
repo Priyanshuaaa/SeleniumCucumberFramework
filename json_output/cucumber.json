@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "FREE CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17783329872,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on login Page",
+            "match": {
+              "location": "LoginstepDefination.user_is_already_on_login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18536358,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login Page is FREE CRM",
+            "match": {
+              "location": "LoginstepDefination.title_of_login_Page_is_FREE_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 371256642,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters Username and password",
+            "match": {
+              "location": "LoginstepDefination.user_enters_Username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12267207523,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginstepDefination.user_clicks_on_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19315668,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginstepDefination.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "FREE CRM Login Feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/Priya/Contacts/Desktop/CucumberFramework-master/CucumberFramework-master/src/main/java/Features/login.feature",
+    "tags": []
+  }
+]
