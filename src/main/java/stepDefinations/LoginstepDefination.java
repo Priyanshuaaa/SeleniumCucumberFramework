@@ -20,9 +20,9 @@ public class LoginstepDefination {
 	
 WebDriver driver;
 
-////Reg Exp:
-////1. \"([^\"]*)\"
-////2. \"(.*)\"
+//Reg Exp:
+//1. \"([^\"]*)\"
+//2. \"(.*)\"
 
 @Given("^user is already on login Page$")
 public void user_is_already_on_login_Page()

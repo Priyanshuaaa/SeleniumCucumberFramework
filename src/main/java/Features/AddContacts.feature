@@ -10,14 +10,14 @@ And user is on home page
 And user clicks on New Contact from the Contacts Tab
 And user is on Add New Contact Screen
 Then filling out "<First Name>" and "<Last Name>" from the New Contact screen
-And making sure the contacts gets added or not 
+And making sure the "<Full Name>" gets added or not 
 Then logout from the application 
 And then user quits the browser
 
 
 Examples:
- |username   | password |First Name|Last Name|
- | Priyanshua|Chetu@123|Swati|Gupta|
- | naveenk|test@123|Munander|Singh|
- | tom|test456|Kunal|Kumar|
+ |username   | password |First Name|Last Name|Full Name|
+ | Priyanshua|Chetu@123|Swati|Gupta|Swati Gupta|
+ | naveenk|test@123|Munander|Singh|Munander Singh|
+ | tom|test456|Kunal|Kumar|Kunal Kumar|
  
