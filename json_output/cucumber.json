@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 23,
         "name": "FREE CRM Login Test Scenario",
         "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 17783329872,
+              "duration": 11271518980,
               "status": "passed"
             },
-            "line": 5,
+            "line": 15,
             "name": "user is already on login Page",
             "match": {
               "location": "LoginstepDefination.user_is_already_on_login_Page()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 18536358,
+              "duration": 37512368,
               "status": "passed"
             },
-            "line": 6,
+            "line": 16,
             "name": "title of login Page is FREE CRM",
             "match": {
               "location": "LoginstepDefination.title_of_login_Page_is_FREE_CRM()"
@@ -36,22 +36,32 @@
           },
           {
             "result": {
-              "duration": 371256642,
+              "duration": 482022109,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enters Username and password",
+            "line": 17,
+            "name": "user enters \"Priyanshua\" and \"Chetu@123\"",
             "match": {
-              "location": "LoginstepDefination.user_enters_Username_and_password()"
+              "arguments": [
+                {
+                  "val": "Priyanshua",
+                  "offset": 13
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginstepDefination.user_enters_Username_and_password(String,String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 12267207523,
+              "duration": 10922426189,
               "status": "passed"
             },
-            "line": 8,
+            "line": 18,
             "name": "user clicks on Login Button",
             "match": {
               "location": "LoginstepDefination.user_clicks_on_Login_Button()"
@@ -60,10 +70,172 @@
           },
           {
             "result": {
-              "duration": 19315668,
+              "duration": 12714582,
               "status": "passed"
             },
-            "line": 9,
+            "line": 19,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginstepDefination.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "FREE CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11267859200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is already on login Page",
+            "match": {
+              "location": "LoginstepDefination.user_is_already_on_login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14602250,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "title of login Page is FREE CRM",
+            "match": {
+              "location": "LoginstepDefination.title_of_login_Page_is_FREE_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 303986036,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters \"naveenk\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "naveenk",
+                  "offset": 13
+                },
+                {
+                  "val": "test@123",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginstepDefination.user_enters_Username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6489181639,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginstepDefination.user_clicks_on_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCRMPRO[]\u003e but was:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinations.LoginstepDefination.user_is_on_home_page(LoginstepDefination.java:71)\r\n\tat ✽.user is on home page(C:/CucumberFramework/src/main/java/Features/login.feature:19)\r\n",
+              "duration": 9207989,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginstepDefination.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "FREE CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20632823075,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is already on login Page",
+            "match": {
+              "location": "LoginstepDefination.user_is_already_on_login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147835663,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "title of login Page is FREE CRM",
+            "match": {
+              "location": "LoginstepDefination.title_of_login_Page_is_FREE_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 882709895,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters \"tom\" and \"test456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tom",
+                  "offset": 13
+                },
+                {
+                  "val": "test456",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginstepDefination.user_enters_Username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8699888892,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginstepDefination.user_clicks_on_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCRMPRO[]\u003e but was:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinations.LoginstepDefination.user_is_on_home_page(LoginstepDefination.java:71)\r\n\tat ✽.user is on home page(C:/CucumberFramework/src/main/java/Features/login.feature:19)\r\n",
+              "duration": 31490912,
+              "status": "failed"
+            },
+            "line": 19,
             "name": "user is on home page",
             "match": {
               "location": "LoginstepDefination.user_is_on_home_page()"
@@ -77,7 +249,7 @@
     "description": "",
     "id": "free-crm-login-feature",
     "keyword": "Feature",
-    "uri": "C:/Users/Priya/Contacts/Desktop/CucumberFramework-master/CucumberFramework-master/src/main/java/Features/login.feature",
+    "uri": "C:/CucumberFramework/src/main/java/Features/login.feature",
     "tags": []
   }
 ]

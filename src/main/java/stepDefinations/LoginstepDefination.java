@@ -6,16 +6,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
+
+
 @SuppressWarnings("deprecation")
 public class LoginstepDefination {
 	
 WebDriver driver;
+
+////Reg Exp:
+////1. \"([^\"]*)\"
+////2. \"(.*)\"
 
 @Given("^user is already on login Page$")
 public void user_is_already_on_login_Page()
@@ -37,16 +44,15 @@ public void title_of_login_Page_is_FREE_CRM()
 	Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.",title);
 }
 
-@Then("^user enters Username and password$")
-public void user_enters_Username_and_password()
+@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+public void user_enters_Username_and_password(String username,String password)
 {
 	WebElement Username=driver.findElement(By.name("username"));
 	WebElement Password=driver.findElement(By.name("password"));
 	Username.clear();
-	Username.sendKeys("Priyanshua");
+	Username.sendKeys(username);
 	Password.clear();
-	Password.sendKeys("Chetu@123");
-	
+	Password.sendKeys(password);
 }
 
 @Then("^user clicks on Login Button$")
@@ -64,5 +70,11 @@ public void user_is_on_home_page()
 	System.out.println(title);
 	Assert.assertEquals("CRMPRO",title);
 
+}
+
+@And("^then user quits the browser$")
+public void then_user_quits_the_browser()
+{
+  driver.quit();	
 }
 }
