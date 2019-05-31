@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.754731">
+<testcase classname="FREE CRM Deals Related Functionalities" name="Add Deal Functionality" time="29.754731">
+<system-out><![CDATA[Given user is already on login Page.........................................passed
+When title of login Page is FREE CRM........................................passed
+Then user enters username and password......................................passed
+Then user clicks on Login Button............................................passed
+And user is on home page....................................................passed
+And user clicks on New Deals from the Deals Tab.............................passed
+Then filling out Title,Company Name,Amount,Probability and Commission from the Add New Deals Screen.passed
+Then logout from the application............................................passed
+And then user quits the browser.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

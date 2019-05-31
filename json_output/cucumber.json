@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Add Deal Functionality",
+        "description": "",
+        "id": "free-crm-deals-related-functionalities;add-deal-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12253824087,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on login Page",
+            "match": {
+              "location": "AddNewDealStepDefination.user_is_already_on_login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23832285,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login Page is FREE CRM",
+            "match": {
+              "location": "AddNewDealStepDefination.title_of_login_Page_is_FREE_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 494379378,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "AddNewDealStepDefination.user_enters_Username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Priyanshua",
+                  "Chetu@123"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10475206584,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "AddNewDealStepDefination.user_clicks_on_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6116105,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on home page",
+            "match": {
+              "location": "AddNewDealStepDefination.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1962762078,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on New Deals from the Deals Tab",
+            "match": {
+              "location": "AddNewDealStepDefination.user_clicks_on_New_Deals_from_the_Deals_Tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2071106476,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "filling out Title,Company Name,Amount,Probability and Commission from the Add New Deals Screen",
+            "match": {
+              "location": "AddNewDealStepDefination.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Mr.",
+                  "Thermax",
+                  "250",
+                  "10",
+                  "30"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1187773947,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "logout from the application",
+            "match": {
+              "location": "AddNewDealStepDefination.logout_from_the_application()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1250300389,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "then user quits the browser",
+            "match": {
+              "location": "AddNewDealStepDefination.then_user_quits_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "FREE CRM Deals Related Functionalities",
+    "description": "",
+    "id": "free-crm-deals-related-functionalities",
+    "keyword": "Feature",
+    "uri": "C:/CucumberFramework/src/main/java/Features/NewDeals.feature",
+    "tags": []
+  }
+]

@@ -18,6 +18,6 @@ And then user quits the browser
 Examples:
  |username   | password |First Name|Last Name|Full Name|
  | Priyanshua|Chetu@123|Swati|Gupta|Swati Gupta|
- | naveenk|test@123|Munander|Singh|Munander Singh|
- | tom|test456|Kunal|Kumar|Kunal Kumar|
+ | Priyanshua|Chetu@123|Munander|Singh|Munander Singh|
+ | Priyanshua|Chetu@123|Kunal|Kumar|Kunal Kumar|
  
