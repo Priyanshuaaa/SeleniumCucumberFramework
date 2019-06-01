@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/CucumberFramework/src/main/java/Features/NewDeals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/CucumberFramework/src/main/java/Features/dealsmap.feature");
 formatter.feature({
   "name": "FREE CRM Deals Related Functionalities",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Add Deal Functionality",
+  "name": "Add Deal Functionality through Map Concept",
   "description": "",
   "keyword": "Scenario"
 });
@@ -14,7 +14,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.user_is_already_on_login_Page()"
+  "location": "DealsStepWithMapDefinition.user_is_already_on_login_Page()"
 });
 formatter.result({
   "status": "passed"
@@ -24,7 +24,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.title_of_login_Page_is_FREE_CRM()"
+  "location": "DealsStepWithMapDefinition.title_of_login_Page_is_FREE_CRM()"
 });
 formatter.result({
   "status": "passed"
@@ -32,6 +32,12 @@ formatter.result({
 formatter.step({
   "name": "user enters username and password",
   "rows": [
+    {
+      "cells": [
+        "Username",
+        "Password"
+      ]
+    },
     {
       "cells": [
         "Priyanshua",
@@ -42,7 +48,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.user_enters_Username_and_password(DataTable)"
+  "location": "DealsStepWithMapDefinition.user_enters_Username_and_password(DataTable)"
 });
 formatter.result({
   "status": "passed"
@@ -52,7 +58,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.user_clicks_on_Login_Button()"
+  "location": "DealsStepWithMapDefinition.user_clicks_on_Login_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -62,7 +68,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.user_is_on_home_page()"
+  "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
 });
 formatter.result({
   "status": "passed"
@@ -72,7 +78,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.user_clicks_on_New_Deals_from_the_Deals_Tab()"
+  "location": "DealsStepWithMapDefinition.user_clicks_on_New_Deals_from_the_Deals_Tab()"
 });
 formatter.result({
   "status": "passed"
@@ -82,18 +88,45 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "Title",
+        "CompanyName",
+        "Amount",
+        "Probability",
+        "Commission"
+      ]
+    },
+    {
+      "cells": [
         "Mr.",
-        "Thermax",
-        "250",
-        "10",
-        "30"
+        "dsdssd",
+        "88",
+        "15",
+        "51"
+      ]
+    },
+    {
+      "cells": [
+        "Mrs.",
+        "sdsdsd",
+        "89",
+        "17",
+        "61"
+      ]
+    },
+    {
+      "cells": [
+        "Mrs.",
+        "dsdsds",
+        "90",
+        "19",
+        "71"
       ]
     }
   ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
+  "location": "DealsStepWithMapDefinition.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
 });
 formatter.result({
   "status": "passed"
@@ -103,7 +136,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.logout_from_the_application()"
+  "location": "DealsStepWithMapDefinition.logout_from_the_application()"
 });
 formatter.result({
   "status": "passed"
@@ -113,7 +146,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddNewDealStepDefination.then_user_quits_the_browser()"
+  "location": "DealsStepWithMapDefinition.then_user_quits_the_browser()"
 });
 formatter.result({
   "status": "passed"

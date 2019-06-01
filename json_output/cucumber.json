@@ -4,47 +4,53 @@
     "elements": [
       {
         "line": 3,
-        "name": "Add Deal Functionality",
+        "name": "Add Deal Functionality through Map Concept",
         "description": "",
-        "id": "free-crm-deals-related-functionalities;add-deal-functionality",
+        "id": "free-crm-deals-related-functionalities;add-deal-functionality-through-map-concept",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12253824087,
+              "duration": 11928789291,
               "status": "passed"
             },
             "line": 5,
             "name": "user is already on login Page",
             "match": {
-              "location": "AddNewDealStepDefination.user_is_already_on_login_Page()"
+              "location": "DealsStepWithMapDefinition.user_is_already_on_login_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 23832285,
+              "duration": 28521459,
               "status": "passed"
             },
             "line": 6,
             "name": "title of login Page is FREE CRM",
             "match": {
-              "location": "AddNewDealStepDefination.title_of_login_Page_is_FREE_CRM()"
+              "location": "DealsStepWithMapDefinition.title_of_login_Page_is_FREE_CRM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 494379378,
+              "duration": 619649637,
               "status": "passed"
             },
             "line": 7,
             "name": "user enters username and password",
             "match": {
-              "location": "AddNewDealStepDefination.user_enters_Username_and_password(DataTable)"
+              "location": "DealsStepWithMapDefinition.user_enters_Username_and_password(DataTable)"
             },
             "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "Password"
+                ]
+              },
               {
                 "cells": [
                   "Priyanshua",
@@ -56,58 +62,85 @@
           },
           {
             "result": {
-              "duration": 10475206584,
+              "duration": 11224107443,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user clicks on Login Button",
             "match": {
-              "location": "AddNewDealStepDefination.user_clicks_on_Login_Button()"
+              "location": "DealsStepWithMapDefinition.user_clicks_on_Login_Button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6116105,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is on home page",
-            "match": {
-              "location": "AddNewDealStepDefination.user_is_on_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1962762078,
+              "duration": 9722680,
               "status": "passed"
             },
             "line": 12,
-            "name": "user clicks on New Deals from the Deals Tab",
+            "name": "user is on home page",
             "match": {
-              "location": "AddNewDealStepDefination.user_clicks_on_New_Deals_from_the_Deals_Tab()"
+              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2071106476,
+              "duration": 1918719182,
               "status": "passed"
             },
             "line": 13,
+            "name": "user clicks on New Deals from the Deals Tab",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_clicks_on_New_Deals_from_the_Deals_Tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10007145095,
+              "status": "passed"
+            },
+            "line": 14,
             "name": "filling out Title,Company Name,Amount,Probability and Commission from the Add New Deals Screen",
             "match": {
-              "location": "AddNewDealStepDefination.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
+              "location": "DealsStepWithMapDefinition.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
             },
             "rows": [
               {
                 "cells": [
+                  "Title",
+                  "CompanyName",
+                  "Amount",
+                  "Probability",
+                  "Commission"
+                ]
+              },
+              {
+                "cells": [
                   "Mr.",
-                  "Thermax",
-                  "250",
-                  "10",
-                  "30"
+                  "dsdssd",
+                  "88",
+                  "15",
+                  "51"
+                ]
+              },
+              {
+                "cells": [
+                  "Mrs.",
+                  "sdsdsd",
+                  "89",
+                  "17",
+                  "61"
+                ]
+              },
+              {
+                "cells": [
+                  "Mrs.",
+                  "dsdsds",
+                  "90",
+                  "19",
+                  "71"
                 ]
               }
             ],
@@ -115,25 +148,25 @@
           },
           {
             "result": {
-              "duration": 1187773947,
+              "duration": 1237739266,
               "status": "passed"
             },
-            "line": 16,
+            "line": 21,
             "name": "logout from the application",
             "match": {
-              "location": "AddNewDealStepDefination.logout_from_the_application()"
+              "location": "DealsStepWithMapDefinition.logout_from_the_application()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1250300389,
+              "duration": 1367735738,
               "status": "passed"
             },
-            "line": 17,
+            "line": 22,
             "name": "then user quits the browser",
             "match": {
-              "location": "AddNewDealStepDefination.then_user_quits_the_browser()"
+              "location": "DealsStepWithMapDefinition.then_user_quits_the_browser()"
             },
             "keyword": "And "
           }
@@ -144,7 +177,7 @@
     "description": "",
     "id": "free-crm-deals-related-functionalities",
     "keyword": "Feature",
-    "uri": "C:/CucumberFramework/src/main/java/Features/NewDeals.feature",
+    "uri": "C:/CucumberFramework/src/main/java/Features/dealsmap.feature",
     "tags": []
   }
 ]
