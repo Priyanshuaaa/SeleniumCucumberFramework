@@ -3,181 +3,115 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 12398364960,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefination.setup()"
+            }
+          }
+        ],
         "line": 3,
-        "name": "Add Deal Functionality through Map Concept",
+        "name": "FREE CRM Login Test Scenario",
         "description": "",
-        "id": "free-crm-deals-related-functionalities;add-deal-functionality-through-map-concept",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 1360694871,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefination.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11928789291,
+              "duration": 235526906,
               "status": "passed"
             },
             "line": 5,
-            "name": "user is already on login Page",
+            "name": "title of login Page is FREE CRM",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_is_already_on_login_Page()"
+              "location": "LoginStepDefination.title_of_login_Page_is_FREE_CRM()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 28521459,
+              "duration": 823742256,
               "status": "passed"
             },
             "line": 6,
-            "name": "title of login Page is FREE CRM",
+            "name": "user enters valid username and password",
             "match": {
-              "location": "DealsStepWithMapDefinition.title_of_login_Page_is_FREE_CRM()"
+              "location": "LoginStepDefination.user_enters_valid__Username_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 619649637,
+              "duration": 13015512241,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters username and password",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_enters_Username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Username",
-                  "Password"
-                ]
-              },
-              {
-                "cells": [
-                  "Priyanshua",
-                  "Chetu@123"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 11224107443,
-              "status": "passed"
-            },
-            "line": 11,
             "name": "user clicks on Login Button",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_clicks_on_Login_Button()"
+              "location": "LoginStepDefination.user_clicks_on_Login_Button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 9722680,
+              "duration": 6135107,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user is on home page",
+            "line": 8,
+            "name": "homepage is displayed",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
+              "location": "LoginStepDefination.homepage_is_displayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1918719182,
+              "duration": 197505589,
               "status": "passed"
             },
-            "line": 13,
-            "name": "user clicks on New Deals from the Deals Tab",
+            "line": 9,
+            "name": "validate logged in username",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_clicks_on_New_Deals_from_the_Deals_Tab()"
+              "location": "LoginStepDefination.validate_logged_in_username()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10007145095,
+              "duration": 1205292689,
               "status": "passed"
             },
-            "line": 14,
-            "name": "filling out Title,Company Name,Amount,Probability and Commission from the Add New Deals Screen",
-            "match": {
-              "location": "DealsStepWithMapDefinition.filling_out_Title_Company_Name_Amount_Probability_and_Commission_from_the_Add_New_Deals_Screen(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Title",
-                  "CompanyName",
-                  "Amount",
-                  "Probability",
-                  "Commission"
-                ]
-              },
-              {
-                "cells": [
-                  "Mr.",
-                  "dsdssd",
-                  "88",
-                  "15",
-                  "51"
-                ]
-              },
-              {
-                "cells": [
-                  "Mrs.",
-                  "sdsdsd",
-                  "89",
-                  "17",
-                  "61"
-                ]
-              },
-              {
-                "cells": [
-                  "Mrs.",
-                  "dsdsds",
-                  "90",
-                  "19",
-                  "71"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1237739266,
-              "status": "passed"
-            },
-            "line": 21,
+            "line": 10,
             "name": "logout from the application",
             "match": {
-              "location": "DealsStepWithMapDefinition.logout_from_the_application()"
+              "location": "LoginStepDefination.logout_from_the_application()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1367735738,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "then user quits the browser",
-            "match": {
-              "location": "DealsStepWithMapDefinition.then_user_quits_the_browser()"
-            },
-            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "FREE CRM Deals Related Functionalities",
+    "name": "FREE CRM Login Feature",
     "description": "",
-    "id": "free-crm-deals-related-functionalities",
+    "id": "free-crm-login-feature",
     "keyword": "Feature",
-    "uri": "C:/CucumberFramework/src/main/java/Features/dealsmap.feature",
+    "uri": "C:/CucumberFramework/src/main/java/Features/loginCRM.feature",
     "tags": []
   }
 ]
