@@ -36,6 +36,9 @@ public class HomePage extends TestBase{
 	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Logo")
 	public WebElement logout;
 	
+	@FindBy(how = How.LINK_TEXT, using = "Sign Up")
+	public WebElement signup;
+	
 	public HomePage()
 	{
 		PageFactory.initElements(driver,this);
@@ -76,6 +79,12 @@ public class HomePage extends TestBase{
 		actionobj.moveToElement(contactslink).build().perform();
 		newcontactslink.click();
 		
+	}
+	
+	public SignupPage clickonsignup()
+	{
+		signup.click();
+		return new SignupPage();
 	}
 	
 	

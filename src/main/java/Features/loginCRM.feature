@@ -8,3 +8,5 @@ Then user clicks on Login Button
 And homepage is displayed
 And validate logged in username
 Then logout from the application
+
+
