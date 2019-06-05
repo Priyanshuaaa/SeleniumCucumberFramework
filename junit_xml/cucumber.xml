@@ -1,12 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.29114">
-<testcase classname="FREE CRM Login Feature" name="FREE CRM Login Test Scenario" time="29.29114">
-<system-out><![CDATA[Given title of login Page is FREE CRM.......................................passed
-When user enters valid username and password................................passed
-Then user clicks on Login Button............................................passed
-And homepage is displayed...................................................passed
-And validate logged in username.............................................passed
-Then logout from the application............................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="11" time="0.351138">
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after not passing the Edition from sign up screen1." time="0.107248">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters "Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123" into mandatory fields except Edition.skipped
+When user tries to sign up..................................................skipped
+Then appropriate message in a pop up related to please select the Edition should get displayed.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify the validation message after passing username of less than 6 characters from sign up screen1." time="0.022631">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "pampa".skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message related to the invalid username length should get displayed.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message when less than 6 characters has been passed in password and confirm password textfields while user is trying to sign up from Signup Screen 1." time="0.006436">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "1234","1234".skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message related to the invalid length of passwords should get displayed into the sign up screen 1.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid combination of email address into both valid email and confirm email textfields from Signup Screen 1." time="0.009133">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid data in "Free Edition","Megha","Jain","pampas_1132","Chetu@123" and "Chetu@123" and invalid "megha@yopmail.com","meghas@yopmail.com" fields.skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message should get displayed related to the invalid combination of emails into the sign up screen 1.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid format of email address into both valid email and confirm email textfields from Signup Screen 1." time="0.015122">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid data in "Free Edition","Megha","Jain","pampas_1132","Chetu@123" and "Chetu@123" and invalid "megha","megha" fields.skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message should get displayed related to the invalid format of emails into the sign up screen 1.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled if any sort of validation message appears on the screen." time="0.015481">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid data into "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" fields expect passwords.skipped
+When user tries to sign up..................................................skipped
+Then submit button should be disabled.......................................skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled right away after user redirects to the sign up screen 1." time="0.005154">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+Then submit button should be disabled.......................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the username which is already used to register account from sign up screen1." time="0.01714">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "Priyanshua".skipped
+When user tries to sign up..................................................skipped
+Then appropriate message in a pop up related to the username already exists should get displayed.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the invalid combination of passwords from sign up screen1." time="0.016186">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "Chetu@123","Chetu@1234".skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message related to the invalid combinations of password should get displayed on the sign up page.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message if no data has been passed into the required textfields and clicking on submit button from sign up screen1." time="0.065886">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user doesn't enter valid data into mandatory fields except "Free Edition".skipped
+When user tries to sign up..................................................skipped
+Then appropriate validation message should get displayed into the sign up screen.skipped
+And sign up user should stay in sign up screen 1 only.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify whether user moves to the sign up screen 2 or not after passing the valid data into all the mandatory fields and from sign up screen1 and hitting the submit button." time="0.070721">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123".skipped
+When user tries to sign up..................................................skipped
+Then user should move to sign up screen2....................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

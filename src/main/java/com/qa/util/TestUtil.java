@@ -34,6 +34,7 @@ public class TestUtil extends TestBase{
 		return element.getText();
 	}
 	
+	
 	public static void elementoselect(WebDriver driver, WebElement element, int timeout) {
 		new WebDriverWait(driver, timeout).
 		until(ExpectedConditions.elementToBeSelected(element));
@@ -51,7 +52,6 @@ public class TestUtil extends TestBase{
 		until(ExpectedConditions.elementToBeSelected(element));
 		return element.isSelected();
       }
-	
 	
 	
 	public static void getelementsfromlist(WebDriver driver,List<WebElement> element,int timeout,String value) throws InterruptedException

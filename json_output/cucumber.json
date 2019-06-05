@@ -1,117 +1,1102 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 12398364960,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStepDefination.setup()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "FREE CRM Login Test Scenario",
+        "line": 15,
+        "name": "To verify the appearence of validation message after not passing the Edition from sign up screen1.",
         "description": "",
-        "id": "free-crm-login-feature;free-crm-login-test-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 1360694871,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginStepDefination.tearDown()"
-            }
-          }
-        ],
+        "id": "free-crm-signup-feature;to-verify-the-appearence-of-validation-message-after-not-passing-the-edition-from-sign-up-screen1.;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 235526906,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "title of login Page is FREE CRM",
+            "line": 7,
+            "name": "user is already on Sign Up Screen",
             "match": {
-              "location": "LoginStepDefination.title_of_login_Page_is_FREE_CRM()"
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 823742256,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "user enters valid username and password",
+            "line": 8,
+            "name": "user enters \"Megha\",\"Jain\",\"megha@yopmail.com\",\"megha@yopmail.com\",\"Megha_1132\",\"Chetu@123\" and \"Chetu@123\" into mandatory fields except Edition",
             "match": {
-              "location": "LoginStepDefination.user_enters_valid__Username_and_password()"
+              "arguments": [
+                {
+                  "val": "Megha",
+                  "offset": 13
+                },
+                {
+                  "val": "Jain",
+                  "offset": 21
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 28
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 48
+                },
+                {
+                  "val": "Megha_1132",
+                  "offset": 68
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 81
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 97
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_except_Edition(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 13015512241,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on Login Button",
-            "match": {
-              "location": "LoginStepDefination.user_clicks_on_Login_Button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6135107,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "homepage is displayed",
-            "match": {
-              "location": "LoginStepDefination.homepage_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 197505589,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "validate logged in username",
-            "match": {
-              "location": "LoginStepDefination.validate_logged_in_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1205292689,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
-            "name": "logout from the application",
+            "name": "appropriate message in a pop up related to please select the Edition should get displayed",
             "match": {
-              "location": "LoginStepDefination.logout_from_the_application()"
+              "location": "SignupStepDefination.appropriate_message_in_a_pop_up_related_to_please_select_the_Edition_should_get_displayed()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "To verify the validation message after passing username of less than 6 characters from sign up screen1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-the-validation-message-after-passing-username-of-less-than-6-characters-from-sign-up-screen1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user enters valid \"Free Edition\",\"C.P\",\"Gulati\",\"Cp@yopmail.com\",\"Cp@yopmail.com\",\"Chetu@123\" and \"Chetu@123\" including \"pampa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 19
+                },
+                {
+                  "val": "C.P",
+                  "offset": 34
+                },
+                {
+                  "val": "Gulati",
+                  "offset": 40
+                },
+                {
+                  "val": "Cp@yopmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "Cp@yopmail.com",
+                  "offset": 66
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 83
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 99
+                },
+                {
+                  "val": "pampa",
+                  "offset": 121
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_including_username_of_less_than_6_characters(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "appropriate validation message related to the invalid username length should get displayed",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_related_to_the_invalid_username_length_should_get_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "To verify the appearence of validation message when less than 6 characters has been passed in password and confirm password textfields while user is trying to sign up from Signup Screen 1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-the-appearence-of-validation-message-when-less-than-6-characters-has-been-passed-in-password-and-confirm-password-textfields-while-user-is-trying-to-sign-up-from-signup-screen-1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "user enters valid \"Free Edition\",\"Megha\",\"Jain\",\"megha@yopmail.com\",\"megha@yopmail.com\",\"Megha_1132\" and \"1234\",\"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 19
+                },
+                {
+                  "val": "Megha",
+                  "offset": 34
+                },
+                {
+                  "val": "Jain",
+                  "offset": 42
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 69
+                },
+                {
+                  "val": "Megha_1132",
+                  "offset": 89
+                },
+                {
+                  "val": "1234",
+                  "offset": 106
+                },
+                {
+                  "val": "1234",
+                  "offset": 113
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_with_less_than_6_characters_passwords(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "appropriate validation message related to the invalid length of passwords should get displayed into the sign up screen 1",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_related_to_the_invalid_length_of_passwords_should_get_displayed_into_the_sign_up_screen_1()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "To verify the appearence of validation message after passing the invalid combination of email address into both valid email and confirm email textfields from Signup Screen 1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-the-appearence-of-validation-message-after-passing-the-invalid-combination-of-email-address-into-both-valid-email-and-confirm-email-textfields-from-signup-screen-1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "user enters valid data in \"Free Edition\",\"Megha\",\"Jain\",\"pampas_1132\",\"Chetu@123\" and \"Chetu@123\" and invalid \"megha@yopmail.com\",\"meghas@yopmail.com\" fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 27
+                },
+                {
+                  "val": "Megha",
+                  "offset": 42
+                },
+                {
+                  "val": "Jain",
+                  "offset": 50
+                },
+                {
+                  "val": "pampas_1132",
+                  "offset": 57
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 71
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 87
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 111
+                },
+                {
+                  "val": "meghas@yopmail.com",
+                  "offset": 131
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_in_mandatory_fields_and_invalid_emails(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "appropriate validation message should get displayed related to the invalid combination of emails into the sign up screen 1",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_should_get_displayed_related_to_the_invalid_combination_of_emails_into_the_sign_up_screen_1()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 71,
+        "name": "To verify the appearence of validation message after passing the invalid format of email address into both valid email and confirm email textfields from Signup Screen 1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-the-appearence-of-validation-message-after-passing-the-invalid-format-of-email-address-into-both-valid-email-and-confirm-email-textfields-from-signup-screen-1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "user enters valid data in \"Free Edition\",\"Megha\",\"Jain\",\"pampas_1132\",\"Chetu@123\" and \"Chetu@123\" and invalid \"megha\",\"megha\" fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 27
+                },
+                {
+                  "val": "Megha",
+                  "offset": 42
+                },
+                {
+                  "val": "Jain",
+                  "offset": 50
+                },
+                {
+                  "val": "pampas_1132",
+                  "offset": 57
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 71
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 87
+                },
+                {
+                  "val": "megha",
+                  "offset": 111
+                },
+                {
+                  "val": "megha",
+                  "offset": 119
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_in_mandatory_fields_and_invalid_emails(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "appropriate validation message should get displayed related to the invalid format of emails into the sign up screen 1",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_should_get_displayed_related_to_the_invalid_format_of_emails_into_the_sign_up_screen_1()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "name": "To verify submit button should be disabled if any sort of validation message appears on the screen.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-submit-button-should-be-disabled-if-any-sort-of-validation-message-appears-on-the-screen.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "user enters valid data into \"Free Edition\",\"Megha\",\"Jain\",\"megha@yopmail.com\",\"megha@yopmail.com\",\"Megha_1132\" fields expect passwords",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 29
+                },
+                {
+                  "val": "Megha",
+                  "offset": 44
+                },
+                {
+                  "val": "Jain",
+                  "offset": 52
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 59
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 79
+                },
+                {
+                  "val": "Megha_1132",
+                  "offset": 99
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_expect_passwords(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "submit button should be disabled",
+            "match": {
+              "location": "SignupStepDefination.submit_button_should_be_disabled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "name": "To verify submit button should be disabled right away after user redirects to the sign up screen 1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-submit-button-should-be-disabled-right-away-after-user-redirects-to-the-sign-up-screen-1.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "submit button should be disabled",
+            "match": {
+              "location": "SignupStepDefination.submit_button_should_be_disabled()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 104,
+        "name": "To validate the sign up after passing the username which is already used to register account from sign up screen1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-validate-the-sign-up-after-passing-the-username-which-is-already-used-to-register-account-from-sign-up-screen1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "user enters valid \"Free Edition\",\"C.P\",\"Gulati\",\"Cp@yopmail.com\",\"Cp@yopmail.com\",\"Chetu@123\" and \"Chetu@123\" including \"Priyanshua\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 19
+                },
+                {
+                  "val": "C.P",
+                  "offset": 34
+                },
+                {
+                  "val": "Gulati",
+                  "offset": 40
+                },
+                {
+                  "val": "Cp@yopmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "Cp@yopmail.com",
+                  "offset": 66
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 83
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 99
+                },
+                {
+                  "val": "Priyanshua",
+                  "offset": 121
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_including_username_of_less_than_6_characters(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "appropriate message in a pop up related to the username already exists should get displayed",
+            "match": {
+              "location": "SignupStepDefination.appropriate_message_in_a_pop_up_related_to_the_username_already_exists_should_get_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 119,
+        "name": "To validate the sign up after passing the invalid combination of passwords from sign up screen1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-validate-the-sign-up-after-passing-the-invalid-combination-of-passwords-from-sign-up-screen1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 111,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 112,
+            "name": "user enters valid \"Free Edition\",\"Megha\",\"Jain\",\"megha@yopmail.com\",\"megha@yopmail.com\",\"Megha_1132\" and \"Chetu@123\",\"Chetu@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 19
+                },
+                {
+                  "val": "Megha",
+                  "offset": 34
+                },
+                {
+                  "val": "Jain",
+                  "offset": 42
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 69
+                },
+                {
+                  "val": "Megha_1132",
+                  "offset": 89
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 106
+                },
+                {
+                  "val": "Chetu@1234",
+                  "offset": 118
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_mandatory_fields_with_less_than_6_characters_passwords(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 113,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 114,
+            "name": "appropriate validation message related to the invalid combinations of password should get displayed on the sign up page",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_related_to_the_invalid_combinations_of_password_should_get_displayed_on_the_sign_up_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 115,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 133,
+        "name": "To verify the appearence of validation message if no data has been passed into the required textfields and clicking on submit button from sign up screen1.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-the-appearence-of-validation-message-if-no-data-has-been-passed-into-the-required-textfields-and-clicking-on-submit-button-from-sign-up-screen1.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 125,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 126,
+            "name": "user doesn\u0027t enter valid data into mandatory fields except \"Free Edition\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 60
+                }
+              ],
+              "location": "SignupStepDefination.user_doesnt_enter_valid_data_into_mandatory_fields_except_Edition(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 127,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 128,
+            "name": "appropriate validation message should get displayed into the sign up screen",
+            "match": {
+              "location": "SignupStepDefination.appropriate_validation_message_should_get_displayed_into_the_sign_up_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 129,
+            "name": "sign up user should stay in sign up screen 1 only",
+            "match": {
+              "location": "SignupStepDefination.sign_up_user_should_stay_in_sign_up_screen_1_only()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 146,
+        "name": "To verify whether user moves to the sign up screen 2 or not after passing the valid data into all the mandatory fields and from sign up screen1 and hitting the submit button.",
+        "description": "",
+        "id": "free-crm-signup-feature;to-verify-whether-user-moves-to-the-sign-up-screen-2-or-not-after-passing-the-valid-data-into-all-the-mandatory-fields-and-from-sign-up-screen1-and-hitting-the-submit-button.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 139,
+            "name": "user is already on Sign Up Screen",
+            "match": {
+              "location": "SignupStepDefination.user_is_already_on_Sign_Up_Screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 140,
+            "name": "user enters valid \"Free Edition\",\"Megha\",\"Jain\",\"megha@yopmail.com\",\"megha@yopmail.com\",\"Megha_1132\",\"Chetu@123\" and \"Chetu@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Free Edition",
+                  "offset": 19
+                },
+                {
+                  "val": "Megha",
+                  "offset": 34
+                },
+                {
+                  "val": "Jain",
+                  "offset": 42
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 49
+                },
+                {
+                  "val": "megha@yopmail.com",
+                  "offset": 69
+                },
+                {
+                  "val": "Megha_1132",
+                  "offset": 89
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 102
+                },
+                {
+                  "val": "Chetu@123",
+                  "offset": 118
+                }
+              ],
+              "location": "SignupStepDefination.user_enters_valid_data_into_all_mandatory_fields(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 141,
+            "name": "user tries to sign up",
+            "match": {
+              "location": "SignupStepDefination.user_tries_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 142,
+            "name": "user should move to sign up screen2",
+            "match": {
+              "location": "SignupStepDefination.user_should_move_to_sign_up_screen2()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
           }
         ]
       }
     ],
-    "name": "FREE CRM Login Feature",
+    "name": "FREE CRM SignUp Feature",
     "description": "",
-    "id": "free-crm-login-feature",
+    "id": "free-crm-signup-feature",
     "keyword": "Feature",
-    "uri": "C:/CucumberFramework/src/main/java/Features/loginCRM.feature",
-    "tags": []
+    "uri": "C:/CucumberFramework/src/main/java/Features/Signup.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
