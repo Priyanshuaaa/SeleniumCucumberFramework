@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
 		format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml","rerun:target/rerun.txt"}, //to generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format
 		strict = true, //it will check if any step is not defined in step definition file
-		dryRun =true//to check the mapping is proper between feature file and step def file,it will not actually go through the step definations and check the mapping.
+		dryRun =false//to check the mapping is proper between feature file and step def file,it will not actually go through the step definations and check the mapping.
+		//tags= {"@New"}
 		//tags = {"~@SmokeTest" , "@RegressionTest"}			
 		)
 

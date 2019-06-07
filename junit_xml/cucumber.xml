@@ -1,87 +1,222 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="11" time="0.351138">
-<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after not passing the Edition from sign up screen1." time="0.107248">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters "Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123" into mandatory fields except Edition.skipped
-When user tries to sign up..................................................skipped
-Then appropriate message in a pop up related to please select the Edition should get displayed.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="498.168666">
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after not passing the Edition from sign up screen1." time="35.568364">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters "Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123" into mandatory fields except Edition.passed
+When user tries to sign up..................................................passed
+Then appropriate message in a pop up related to please select the Edition should get displayed.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify the validation message after passing username of less than 6 characters from sign up screen1." time="0.022631">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "pampa".skipped
-When user tries to sign up..................................................skipped
-Then appropriate validation message related to the invalid username length should get displayed.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify the validation message after passing username of less than 6 characters from sign up screen1." time="34.132127">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "pampa".passed
+When user tries to sign up..................................................passed
+Then appropriate validation message related to the invalid username length should get displayed.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message when less than 6 characters has been passed in password and confirm password textfields while user is trying to sign up from Signup Screen 1." time="0.006436">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "1234","1234".skipped
-When user tries to sign up..................................................skipped
-Then appropriate validation message related to the invalid length of passwords should get displayed into the sign up screen 1.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message when less than 6 characters has been passed in password and confirm password textfields while user is trying to sign up from Signup Screen 1." time="28.364814">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "1234","1234".passed
+When user tries to sign up..................................................passed
+Then appropriate validation message related to the invalid length of passwords should get displayed into the sign up screen 1.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid combination of email address into both valid email and confirm email textfields from Signup Screen 1." time="0.009133">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid data in "Free Edition","Megha","Jain","pampas_1132","Chetu@123" and "Chetu@123" and invalid "megha@yopmail.com","meghas@yopmail.com" fields.skipped
-When user tries to sign up..................................................skipped
-Then appropriate validation message should get displayed related to the invalid combination of emails into the sign up screen 1.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid combination of email address into both valid email and confirm email textfields from Signup Screen 1." time="31.596433">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid data in "Free Edition","Megha","Jain","pampas_1132","Chetu@123" and "Chetu@123" and invalid "megha@yopmail.com","meghas@yopmail.com" fields.passed
+When user tries to sign up..................................................passed
+Then appropriate validation message should get displayed related to the invalid combination of emails into the sign up screen 1.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid format of email address into both valid email and confirm email textfields from Signup Screen 1." time="0.015122">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message after passing the invalid format of email address into both valid email and confirm email textfields from Signup Screen 1." time="33.104078">
+<failure message="org.openqa.selenium.TimeoutException: Timeout loading page after 20000ms&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CHETUIWK255', ip: '172.16.4.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190529145824, moz:headless: false, moz:processID: 15512, moz:profile: C:\Users\priyanshua\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b5f7b3d6-4d10-45e7-b003-9cdacecd49fe&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at com.qa.base.TestBase.initialization(TestBase.java:79)&#13;&#10;&#9;at stepDefinations.SignupStepDefination.setup(SignupStepDefination.java:40)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:32)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;&#10;&#9;at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)&#13;&#10;&#9;at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)&#13;&#10;&#9;at cucumber.api.TestStep.run(TestStep.java:83)&#13;&#10;&#9;at cucumber.api.TestCase.run(TestCase.java:58)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:80)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;&#10;"><![CDATA[Given user is already on Sign Up Screen.....................................skipped
 And user enters valid data in "Free Edition","Megha","Jain","pampas_1132","Chetu@123" and "Chetu@123" and invalid "megha","megha" fields.skipped
 When user tries to sign up..................................................skipped
 Then appropriate validation message should get displayed related to the invalid format of emails into the sign up screen 1.skipped
 And sign up user should stay in sign up screen 1 only.......................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Timeout loading page after 20000ms
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHETUIWK255', ip: '172.16.4.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190529145824, moz:headless: false, moz:processID: 15512, moz:profile: C:\Users\priyanshua\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b5f7b3d6-4d10-45e7-b003-9cdacecd49fe
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.base.TestBase.initialization(TestBase.java:79)
+	at stepDefinations.SignupStepDefination.setup(SignupStepDefination.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+]]></failure>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled if any sort of validation message appears on the screen." time="62.835943">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid data into "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" fields expect passwords.passed
+When user tries to sign up..................................................passed
+Then submit button should be disabled.......................................passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled if any sort of validation message appears on the screen." time="0.015481">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid data into "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" fields expect passwords.skipped
-When user tries to sign up..................................................skipped
-Then submit button should be disabled.......................................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled after entering valid data into all mandatory fields and then clearing out any field." time="31.600309">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinations.SignupStepDefination.submit_button_should_be_disabled(SignupStepDefination.java:194)&#13;&#10;&#9;at ✽.submit button should be disabled(C:/CucumberFramework/src/main/java/Features/Signup.feature:92)&#13;&#10;"><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123".passed
+When clearing out any of the entered values.................................passed
+Then submit button should be disabled.......................................failed
 And sign up user should stay in sign up screen 1 only.......................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinations.SignupStepDefination.submit_button_should_be_disabled(SignupStepDefination.java:194)
+	at ✽.submit button should be disabled(C:/CucumberFramework/src/main/java/Features/Signup.feature:92)
+]]></failure>
+</testcase>
+<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled right away after user redirects to the sign up screen 1." time="27.15554">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+Then submit button should be disabled.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify submit button should be disabled right away after user redirects to the sign up screen 1." time="0.005154">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-Then submit button should be disabled.......................................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the username which is already used to register account from sign up screen1." time="56.287154">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "Priyanshua".passed
+When user tries to sign up..................................................passed
+Then appropriate message in a pop up related to the username already exists should get displayed.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the username which is already used to register account from sign up screen1." time="0.01714">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid "Free Edition","C.P","Gulati","Cp@yopmail.com","Cp@yopmail.com","Chetu@123" and "Chetu@123" including "Priyanshua".skipped
-When user tries to sign up..................................................skipped
-Then appropriate message in a pop up related to the username already exists should get displayed.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the invalid combination of passwords from sign up screen1." time="64.72258">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "Chetu@123","Chetu@1234".passed
+When user tries to sign up..................................................passed
+Then appropriate validation message related to the invalid combinations of password should get displayed on the sign up page.passed
+And sign up user should stay in sign up screen 1 only.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To validate the sign up after passing the invalid combination of passwords from sign up screen1." time="0.016186">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132" and "Chetu@123","Chetu@1234".skipped
-When user tries to sign up..................................................skipped
-Then appropriate validation message related to the invalid combinations of password should get displayed on the sign up page.skipped
-And sign up user should stay in sign up screen 1 only.......................skipped
-]]></system-out>
-</testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message if no data has been passed into the required textfields and clicking on submit button from sign up screen1." time="0.065886">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify the appearence of validation message if no data has been passed into the required textfields and clicking on submit button from sign up screen1." time="42.351732">
+<failure message="org.openqa.selenium.TimeoutException: Timeout loading page after 20000ms&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CHETUIWK255', ip: '172.16.4.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190529145824, moz:headless: false, moz:processID: 16820, moz:profile: C:\Users\priyanshua\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5c0097a7-0d40-4dd3-befe-38a94cd802c4&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at com.qa.base.TestBase.initialization(TestBase.java:79)&#13;&#10;&#9;at stepDefinations.SignupStepDefination.setup(SignupStepDefination.java:40)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:32)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;&#10;&#9;at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)&#13;&#10;&#9;at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)&#13;&#10;&#9;at cucumber.api.TestStep.run(TestStep.java:83)&#13;&#10;&#9;at cucumber.api.TestCase.run(TestCase.java:58)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:80)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;&#10;"><![CDATA[Given user is already on Sign Up Screen.....................................skipped
 And user doesn't enter valid data into mandatory fields except "Free Edition".skipped
 When user tries to sign up..................................................skipped
 Then appropriate validation message should get displayed into the sign up screen.skipped
 And sign up user should stay in sign up screen 1 only.......................skipped
-]]></system-out>
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Timeout loading page after 20000ms
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHETUIWK255', ip: '172.16.4.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190529145824, moz:headless: false, moz:processID: 16820, moz:profile: C:\Users\priyanshua\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c0097a7-0d40-4dd3-befe-38a94cd802c4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.qa.base.TestBase.initialization(TestBase.java:79)
+	at stepDefinations.SignupStepDefination.setup(SignupStepDefination.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+]]></failure>
 </testcase>
-<testcase classname="FREE CRM SignUp Feature" name="To verify whether user moves to the sign up screen 2 or not after passing the valid data into all the mandatory fields and from sign up screen1 and hitting the submit button." time="0.070721">
-<system-out><![CDATA[Given user is already on Sign Up Screen.....................................skipped
-And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123".skipped
-When user tries to sign up..................................................skipped
-Then user should move to sign up screen2....................................skipped
+<testcase classname="FREE CRM SignUp Feature" name="To verify whether user moves to the sign up screen 2 or not after passing the valid data into all the mandatory fields and from sign up screen1 and hitting the submit button." time="50.449592">
+<system-out><![CDATA[Given user is already on Sign Up Screen.....................................passed
+And user enters valid "Free Edition","Megha","Jain","megha@yopmail.com","megha@yopmail.com","Megha_1132","Chetu@123" and "Chetu@123".passed
+When user tries to sign up..................................................passed
+Then user should move to sign up screen2....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

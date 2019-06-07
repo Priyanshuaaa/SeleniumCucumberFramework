@@ -55,37 +55,37 @@ public class SignupPage extends TestBase {
 	@FindBy(how = How.XPATH, using = "//small[contains(text(),'The mail and its confirm must be the same')]")
 	public WebElement invalidcombination_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'Invalid Email Address')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'Invalid Email Address')]")
 	public WebElement invalidemail_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'The password and its confirm must be the same')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'The password and its confirm must be the same')]")
 	public WebElement invalidpassw_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'Please enter your first name')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'Please enter your first name')]")
 	public WebElement firstname_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'Please enter your surname')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'Please enter your surname')]")
 	public WebElement lastname_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'Please enter your email address')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'Please enter your email address')]")
 	public WebElement email_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'Please confirm your email address')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'Please confirm your email address')]")
 	public WebElement confirmemail_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'You must select a username')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'You must select a username')]")
 	public WebElement usernames_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'You must select a password')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'You must select a password')]")
 	public WebElement password_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'You must confirm your password')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'You must confirm your password')]")
 	public WebElement confirmpassword_errormsg;
 	
-	@FindBy(how = How.CSS, using = "//small[contains(text(),'You must agree to the Terms and Conditions before ')]")
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'You must agree to the Terms and Conditions before ')]")
 	public WebElement TandC_errormsg;
 	
-	@FindBy(how = How.ID, using = "//small[contains(text(),'You must agree to the Terms and Conditions before ')]")
+	@FindBy(how = How.ID, using = "editionText")
 	public WebElement editiontxt;
 	
 			

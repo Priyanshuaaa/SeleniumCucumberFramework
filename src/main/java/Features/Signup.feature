@@ -57,7 +57,7 @@ Examples:
 |Free Edition|Megha|Jain|pampas_1132|Chetu@123|Chetu@123|megha@yopmail.com|meghas@yopmail.com|
 
 
-@SmokeTest
+@SmokeTest @Failed
 Scenario Outline: To verify the appearence of validation message after passing the invalid format of email address into both valid email and confirm email textfields from Signup Screen 1. 
 
 Given user is already on Sign Up Screen
@@ -83,6 +83,20 @@ Examples:
 |Edition|FirstName|LastName|Email|ConfirmEmail|Username|
 |Free Edition|Megha|Jain|megha@yopmail.com|megha@yopmail.com|Megha_1132|
 
+@SmokeTest @New
+Scenario Outline: To verify submit button should be disabled after entering valid data into all mandatory fields and then clearing out any field.
+
+Given user is already on Sign Up Screen
+And user enters valid "<Edition>","<FirstName>","<LastName>","<Email>","<ConfirmEmail>","<Username>","<Password>" and "<ConfirmPassword>"
+When clearing out any of the entered values
+Then submit button should be disabled
+And  sign up user should stay in sign up screen 1 only
+
+Examples:
+|Edition|FirstName|LastName|Email|ConfirmEmail|Username|Password|ConfirmPassword|
+|Free Edition|Megha|Jain|megha@yopmail.com|megha@yopmail.com|Megha_1132|Chetu@123|Chetu@123|
+
+
 
 @SmokeTest
 Scenario: To verify submit button should be disabled right away after user redirects to the sign up screen 1.
@@ -90,7 +104,7 @@ Scenario: To verify submit button should be disabled right away after user redir
 Given user is already on Sign Up Screen
 Then submit button should be disabled
 
-@SmokeTest @RegressionTest
+@SmokeTest @RegressionTest @Faileds
 Scenario Outline: To validate the sign up after passing the username which is already used to register account from sign up screen1.
 
 Given user is already on Sign Up Screen
@@ -105,7 +119,7 @@ Examples:
 
 
 
-@SmokeTest @RegressionTest
+@SmokeTest @RegressionTest @Failed
 Scenario Outline: To validate the sign up after passing the invalid combination of passwords from sign up screen1.
 
 Given user is already on Sign Up Screen
@@ -119,7 +133,7 @@ Examples:
 |Free Edition|Megha|Jain|megha@yopmail.com|megha@yopmail.com|Megha_1132|Chetu@123|Chetu@1234|
 
 
-@SmokeTest @RegressionTest
+@SmokeTest @RegressionTest @Failed
 Scenario Outline: To verify the appearence of validation message if no data has been passed into the required textfields and clicking on submit button from sign up screen1.
 
 Given user is already on Sign Up Screen
@@ -144,6 +158,9 @@ Then user should move to sign up screen2
 Examples:
  |Edition|FirstName|LastName|Email|ConfirmEmail|Username|Password|ConfirmPassword|
  |Free Edition|Megha|Jain|megha@yopmail.com|megha@yopmail.com|Megha_1132|Chetu@123|Chetu@123|
+ 
+ 
+ 
 
 
 

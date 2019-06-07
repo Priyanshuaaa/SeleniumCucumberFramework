@@ -6,6 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
+import com.qa.pages.Loginpage;
 import com.qa.pages.SignUpPage2;
 import com.qa.pages.SignupPage;
 import com.qa.util.TestUtil;
@@ -18,7 +19,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class SignupStepDefination extends TestBase {
-
+ 
+	Loginpage login;
 	SignupPage signup;
 	HomePage homepage;
 	SignUpPage2 signup2;
@@ -32,13 +34,21 @@ public class SignupStepDefination extends TestBase {
 		super();
 	}
 	
-	@Before
+	@Before(order=1)
 	public void setup()
 	{
 		initialization();
      	signup=new SignupPage();
      	homepage=new HomePage();
      	signup2=new SignUpPage2();
+     	login=new Loginpage();
+	}
+	
+	@Before(order=2)
+	public void signupclick() throws InterruptedException
+	{
+		Thread.sleep(5000);
+		signup=login.clickonsignup();
 	}
 	
 	@Given("^user is already on Sign Up Screen$")
@@ -50,7 +60,7 @@ public class SignupStepDefination extends TestBase {
 	@When("^user tries to sign up$")
 	public void user_tries_to_sign_up()
 	{
-		signup.signupsubmit();	
+		signup2=signup.signupsubmit();	
 	}
 
 	@And("^sign up user should stay in sign up screen 1 only$")
@@ -199,9 +209,11 @@ public class SignupStepDefination extends TestBase {
 	@Then("^appropriate message in a pop up related to the username already exists should get displayed$")
 	public void appropriate_message_in_a_pop_up_related_to_the_username_already_exists_should_get_displayed()
 	{
+            		
 		    Alert alert=driver.switchTo().alert();
 		    String errormsg=alert.getText();
-		    Assert.assertTrue(errormsg.contains("This username is already in use by another user.Please select a different username"));
+		    System.out.println(errormsg);
+		    Assert.assertTrue(errormsg.contains("Errors were encountered:"));
 		    alert.accept();
 	}
 	
@@ -253,6 +265,13 @@ public class SignupStepDefination extends TestBase {
 		TestUtil.clickOn(driver,signup.tandC,20);
 	}
 	
+	@When("^clearing out any of the entered values$")
+	public void clearing_out_any_of_the_entered_values() throws InterruptedException
+	{
+		signup.password.clear();
+	}
+		
+	
 	@Then("^user should move to sign up screen2$")
 	public void user_should_move_to_sign_up_screen2()
 	{
@@ -263,9 +282,5 @@ public class SignupStepDefination extends TestBase {
 	public void teardown()
 	{
 		driver.quit();
-	}
-	
-	
-	
-	
+	}	
 }

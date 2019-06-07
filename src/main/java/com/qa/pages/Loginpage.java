@@ -6,6 +6,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.TestBase;
+import com.qa.util.TestUtil;
 
 public class Loginpage extends TestBase {
 	
@@ -19,7 +20,10 @@ public class Loginpage extends TestBase {
 	public WebElement loginbtn;
 
 	@FindBy(how = How.CSS, using = ".navbar-brand > img:nth-child(1)")
-	WebElement crmlogo;
+	public WebElement crmlogo;
+	
+	@FindBy(how = How.LINK_TEXT, using = "Sign Up")
+	public WebElement signup;
 	
 		
 	public Loginpage()
@@ -48,4 +52,9 @@ public class Loginpage extends TestBase {
 		return new HomePage();
 	}
 
+	public SignupPage clickonsignup()
+	{
+		TestUtil.clickOn(driver,signup,30);
+		return new SignupPage();
+	}
 }
